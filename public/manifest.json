@@ -1,0 +1,39 @@
+{
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Melquiades Amir Velazquez Gutierrez' Portfolio.",
+  "display": "standalone",
+  "name": "Potfolio de Melquiades Amir Velazquez Gutierrez.",
+  "short_name": "Potfolio",
+  "orientation": "portrait",
+  "lang": "en",
+  "categories": ["social", "business", "education"],
+  "start_url": "",
+  "icons": [
+    {
+      "src": "https://cucoders.dev/assets/img/app_icons/64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cucoders.dev/assets/img/app_icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cucoders.dev/assets/img/app_icons/16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cucoders.dev/assets/img/app_icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cucoders.dev/assets/img/app_icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
