@@ -7,15 +7,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  server: {
-    headers:{
-        "Access-control-allow-origin": "*",
-    },
-  },
+  site: 'https://melquiadesamir.github.io',
   vite: {
-    preview:{
-    allowedHosts:[".ngrok-free.app"]
-    },
     plugins: [tailwindcss()]
   },
     integrations: [react()]
