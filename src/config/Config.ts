@@ -8,6 +8,8 @@ export const Config = {
     social: {
         github: 'https://github.com/melquiadesamir',
         linkedin: 'https://www.linkedin.com/in/melquiadesamir/',
+        instagram: 'https://www.instagram.com/melquiadesamir/',
+        twitter: 'https://x.com/melquiadesamir',
     },
 
     // Contact Information

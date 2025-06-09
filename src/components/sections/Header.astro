@@ -1,0 +1,55 @@
+---
+import ButtonTerminal from '../react/ButtonTerminal';
+---
+<header id="home" class=" min-h-screen flex items-center pt-10 bg-gray-50 dark:bg-gray-800">
+    <div aria-hidden="true" class="absolute inset-0 grid w-full grid-cols-2 gap-20 m-auto top-32 h-max md:gap-60 opacity-20">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-primary-500 to-purple-400"></div>            
+        <div class="blur-[106px] h-56 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 py-12 md:py-24 z-10">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-balance">
+                    Hi, I'm <span class="text-gradient">Melquiades Velazquez</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">
+                    Developer <span class="text-primary">Frontend</span>
+                </h2>
+                <p class="text-lg mb-8 text-gray-600 dark:text-gray-400">
+                    I create beautiful and functional digital experiences with clean code and attention to detail. <strong>That's what you need! :)</strong>
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacts" class="px-8 py-3 bg-primary text-white rounded-full font-medium hover:opacity-90 transition">
+                        Contact me
+                    </a>
+                    <a href="#projects" class="px-8 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-white transition">
+                        Project view
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-primary to-secondary rounded-full overflow-hidden shadow-xl">
+                        <!-- Aquí iría tu imagen -->
+                        <div class="w-full h-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
+                            <!-- <i class="fa fa-user text-6xl text-white"></i> -->
+                            <img src="https://avatars.githubusercontent.com/u/69167799?v=4" alt="" loading="lazy"></img>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-11/12 left-0 bg-gray-300 dark:bg-gray-800 p-4 rounded-xl shadow-lg" id="hola-mundo">
+                        <div class="absolute w-6 h-6 top-0 left-2 shadow-lg -translate-1 rotate-30 -z-10 bg-gray-300 dark:bg-gray-800"></div>
+                        <div class="text-sm font-bold text-gradient">It's me</div>
+                        <ButtonTerminal client:only="react" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</header>
+    

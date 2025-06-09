@@ -154,8 +154,8 @@ export default function DraggableWindow({
       ref={windowRef}
       className={`${
         isMobile 
-          ? 'fixed inset-0 m-4 z-100' 
-          : 'fixed  z-25'
+          ? 'fixed inset-0 m-4 top-17 z-100' 
+          : 'fixed z-25'
       } shadow-xl bg-gray-900/80 overflow-hidden p-0 transition-all duration-300 ${
         isDragging ? 'cursor-grabbing' : 'cursor-default'
       } ${className}`}

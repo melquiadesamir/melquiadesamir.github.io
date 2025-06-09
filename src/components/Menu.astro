@@ -2,14 +2,14 @@
     <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-gradient">Portafolio</a>
+                <a href="#" class="text-2xl font-bold text-gradient">Portfolio</a>
                 
                 <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="hover:text-primary transition">Home</a>
-                    <a href="#sobre-mi" class="hover:text-primary transition">About</a>
-                    <a href="#proyectos" class="hover:text-primary transition">Projects</a>
-                    <a href="#habilidades" class="hover:text-primary transition">Skills</a>
-                    <a href="#contacto" class="hover:text-primary transition">Contacts</a>
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#skills" class="hover:text-primary transition">Skills</a>
+                    <a href="#contacts" class="hover:text-primary transition">Contacts</a>
                 </div>
                 
                 <div class="flex items-center space-x-4">
@@ -29,11 +29,11 @@
             <!-- Mobile menu -->
             <div class="md:hidden hidden py-4"  id="navbar-default" >
                 <div class="flex flex-col space-y-4">
-                    <a href="#inicio" class="hover:text-primary transition">Home</a>
-                    <a href="#sobre-mi" class="hover:text-primary transition">About</a>
-                    <a href="#proyectos" class="hover:text-primary transition">Projects</a>
-                    <a href="#habilidades" class="hover:text-primary transition">Skills</a>
-                    <a href="#contacto" class="hover:text-primary transition">Contacts</a>
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#skills" class="hover:text-primary transition">Skills</a>
+                    <a href="#contacts" class="hover:text-primary transition">Contacts</a>
                 </div>
             </div>
         </div>
@@ -44,7 +44,6 @@
         var menuToggleBtnNav = document.getElementById('navbar-default');
 
         menuToggleBtn.addEventListener('click', function() {
-            console.log("Clickeado!")
             menuToggleBtnNav.classList.toggle('hidden');
         })
 

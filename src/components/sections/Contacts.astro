@@ -1,0 +1,66 @@
+---
+export interface Props {
+    email: string
+    linkedin: string
+    github: string
+    instagram: string
+    twitter: string
+}
+const { email, linkedin, github, instagram, twitter } = Astro.props
+---
+<section id="contacts" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Contacts</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Let's talk!</h3>
+                    <p class="mb-8 text-lg">
+                        Got a project idea or want to team up? Drop me a message, I'll reply ASAP!
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-primary/10 text-primary rounded-full">
+                                <svg class="w-5 h-5">
+                                    <use href="/assets/images/sprite.svg#email" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href=`mailto:${email}` class="text-gray-600 dark:text-gray-300 hover:underline">{email}</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="mt-8 flex gap-4">
+
+                        <a href={twitter} class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 hover:text-blue-600 dark:hover:bg-gray-600 transition" target="_blank">
+                            <svg class="w-5 h-5">
+                                <use href="/assets/images/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                        <a href={linkedin} class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 hover:text-blue-600 dark:hover:bg-gray-600 transition" target="_blank">
+                            <svg class="w-5 h-5">
+                                <use href="/assets/images/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                        <a href={github} class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 hover:text-blue-600 dark:hover:bg-gray-600 transition" target="_blank">
+                            <svg class="w-5 h-5">
+                                <use href="/assets/images/sprite.svg#github" />
+                            </svg>
+                        </a>
+                        <a href={instagram} class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 hover:text-blue-600 dark:hover:bg-gray-600 transition" target="_blank">
+                            
+                            <svg class="w-5 h-5">
+                                <use href="/assets/images/sprite.svg#instagram" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
